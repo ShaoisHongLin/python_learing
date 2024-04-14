@@ -1,3 +1,4 @@
+# \行连接符
 a='afasfafafafffas\
 asdasdad\
 ad'
