@@ -1,5 +1,4 @@
-# range的推导式生成
-
+# 讲解如何利用range推导式生成出一个列表
 a=[x*2 for x in range(5)]
 print(a)
 # 如何去看这个长串?
