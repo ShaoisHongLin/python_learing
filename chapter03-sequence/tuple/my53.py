@@ -1,4 +1,3 @@
-# 利用生成器，推导式创建元组。
 
 '''
 1.推导式生成的是生成器(generate)对象
@@ -32,3 +31,4 @@ print(e.__next__())
 print(e.__next__())
 print(e.__next__())
 # print(e.__next__())  这行会报错，因为指针已经到达结尾。 Stop Iteration
+
