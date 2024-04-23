@@ -7,7 +7,8 @@ a=[1,2,3,4]
 b=["a","b","c","d"]
 c=["A","B","C","D","E"]
 d=zip(a,b,c)
+# zip() 是 Python 中用于将多个可迭代对象进行配对的"配对函数",生成一个迭代器对象。
 print(d)   #<zip object at 0x0000024B50BF8540> 生成的是一个zip对象，需要转化为list()
 # 转化为list对象
 e=list(d)
-print(e)
+print(e) 
