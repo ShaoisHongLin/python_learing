@@ -1,4 +1,4 @@
-# 1.python字符串驻留机制
+# 1.python字符串在内存中的"驻留"特性
 
 a='abc'
 b='abc'
@@ -11,12 +11,3 @@ print(a is b)
 # 这种机制主要用于优化内存使用和提高性能。
 
 
-# 2.回顾：同一性操作符   is isnot (比较对象)   |    ==  !=  (比较内容)
-print(a is b)
-print(a is not b)
-
-print(a == b)
-print(a != b)
-
-# 3.回顾：成员操作符
-print('ab' in a)
