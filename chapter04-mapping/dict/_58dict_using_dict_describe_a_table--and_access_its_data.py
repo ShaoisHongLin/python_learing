@@ -9,12 +9,6 @@ r3=dict(name="qin",age=19,score=87)
 tb起名为table'表'的缩写
 tb=list([r1,r2,r3])
 '''
-r1=dict(name="shao",age=18,score=85)
-r2=dict(name="shi",age=19,score=85)
-r3=dict(name="qin",age=19,score=87)
-
-tb=list([r1,r2,r3])
-
 # print(tb)  dict是可以直接打印出来的
 print(tb)
 # 想获取表的第一条记录的age项。
