@@ -1,13 +1,10 @@
 # if else if用缩进嵌套。以及用条件匹配情况的两种思路。
+
 '''
-1."缩进",在嵌套的if中很重要
+if的嵌套可以用来写"排除掉错误情况："
 
 
-# 比较简单的用法就是
-if 排除掉错误情况：
-
-else:
-	if正确的几种情况
+注：缩进很重要在python里
 '''
 score=int(input("请输入一个数字"))
 if score<0 and score>100:
@@ -24,7 +21,7 @@ print("分数是{0},结果是{1}".format(score,grade))
 
 
 
-# 2.感受用于匹配各种情况进行选择的两种思路：
+# 2.减少不必要的if嵌套，可以用if直接优化处理。
 
 # <1>
 '''
@@ -40,18 +37,11 @@ print("分数是{0},结果是{1}".format(score,grade))
 # <2>
 '''
 第二种:
-degree='ABCDE'                    # 先囊括再所有的选项
+degree='ABCDE'                    # 先囊括所有的选项
 score=int(input("请输入分数"))       
 num=0
 num=score//10
-if num<6:num=5
-
+if num<6:
+    num=5
 print("分数是{0}，等级是{1}".format(score,degree[9-num]))
 '''
-degree='ABCDE'                    # 先囊括再所有的选项
-score=int(input("请输入分数"))
-num=0
-num=score//10
-if num<6:num=5
-
-print("分数是{0}，等级是{1}".format(score,degree[9-num]))
