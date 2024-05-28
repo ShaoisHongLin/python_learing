@@ -18,8 +18,8 @@ class Student:
 
 
                          
-s1=Student()
-s2=Student()
+s1=Student()        #无参构造
+s2=Student()        #无参构造
 s1.param=111         #修改属性值，
 s2.param2=222        #或者用实例为s2"单独"追加新属性(不会影响其它对象或类的模板，只是为特定实例增加属性).
 '''
