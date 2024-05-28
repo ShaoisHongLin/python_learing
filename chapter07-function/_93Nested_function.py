@@ -76,20 +76,14 @@ inner()
 '''
 # 代码示例：闭包简单示例：闭包的关键在于外围函数return内层函数的对象名。
     
-'''
-    def outer(x):
-        y = 5
-    def inner(z):
-        return x + y + z
-    return inner
 
-# 创建一个闭包
-closure = outer(10)
-# 调用闭包
-print(closure(2))  # 输出 17
-'''
+#    def outer(x):
+#        y = 5
+#    def inner(z):
+#        return x + y + z
+#    return inner
 
-
-
-
-'''
+    # 创建一个闭包
+#closure = outer(10)
+    # 调用闭包
+#print(closure(2))  # 输出 17
