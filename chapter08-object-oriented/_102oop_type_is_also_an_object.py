@@ -8,15 +8,19 @@ print(type(Student))
 print(id(Student))
 print(Student)
 '''
-会返回的信息：
-<class 'type'>
-2721240604384
-<class '__main__.Student'>
+会返回的类对象信息：
+1.type信息:<class 'type'>
+2.id信息:2721240604384
+3.类对象的默认value信息:<class '__main__.Student'>
 
+解释：
+1.问:为什么把类对象起名为type-object,而没有叫它class object,而且对于"类对象"的type查看其类型type(Student),发现是<class'type'>,
+而我们注意到,查看"实例对象"的type(s1)其类型发现是<class'object'>。
 
-print(Student)的结果是<class '__main__.Student'>,可以发现类对象的默认值是<class '__main__.>,由于是对象,
+    答,我查询了chatgpt:类对象是由你提到的--"元类metaclass它是用来创建其他类的类",所以类对象会显示class<type>,而如果我把自定义的对象实例化,比如s1=Student(),那么type(s1)是class<object>,
+    实例化对象对应<class'object'>,因此当我想区别《实例化对象,和类对象》时候,更应该称类对象为"type object"
 
-类对象甚至赋给其它变量,
+类对象是对象所以也当然可以把它绑定给其它变量。
 
 比如:
 a=Student     a绑定了一个类对象的id
