@@ -71,7 +71,14 @@ with open(r"f:\123456.txt","w",encoding="utf-8")as f:
     s=["字符串1","字符串2\n","字符串3\n","字符串4"]
     f.writelines(s)
 
+'''
+另外,对于跟操作系统打开磁盘的写入通道的过程,我们要及时关闭。
+可以写成第一种传统形式:try except,用try except使得出现异常时候能正确地退出。finally关闭写入的通道。
 
+也可以使用第二种with上下文管理器。用with也可以直接替代.传统的try except finally.的等价内容。
+
+总之我们要确保f.close()的关闭操作,以及对读写过程出现异常而做出处理。
+'''
 
 
 '''
