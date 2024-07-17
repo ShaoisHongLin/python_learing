@@ -10,7 +10,7 @@ with open(r"f:\123.txt","r",encoding="utf-8") as f:
     #lines_new=[ line+"#"+str(index) for index,line in zip(range(1,len(lines)+1),lines)]
 
 
-    lines_new=[ line.rstrip()+"#"+str(index)+"\n" for index,line in zip(range(1,len(lines)+1),lines)]
+    lines_new=[ line.rstrip()+"     #"+str(index)+"\n" for index,line in zip(range(1,len(lines)+1),lines)]
     print(lines)
     print(lines_new)
     '''
