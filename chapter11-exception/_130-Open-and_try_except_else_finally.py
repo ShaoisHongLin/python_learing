@@ -4,6 +4,10 @@
 # finally的主要用途是，操作结束后，释放该释放的资源。
 try:
     f=open("F:/a.txt","r")  # open函数，专门用于打开本电脑的磁盘文件，打开磁盘中的文件并返回一个文件对象
+    '''
+    在这里提及一下open()函数,open用于跟操作系统沟通,并打开磁盘的传输通道,
+    第一个参数是文件名,第二个参数是r(read)/w(write)/a(add尾部追加)模式,后面还可以加encoding="utf-8"来设置字符集编码方式。
+    '''
     content=f.readline() #文件对象可以进行readline()读取一行内容
     print(content)
 except BaseException as e:
