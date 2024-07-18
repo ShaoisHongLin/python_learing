@@ -65,6 +65,7 @@ os.remove(path)     删除指定文件
 os.rename(src,dest)   重命名文件或目录
 os.stat(path)       返回文件的状况、属性。
 os.listdir(path)         返回目录下的文件
+    !!!!!注意:listdir会将当前目录的文件夹中的文件名,返回为一个列表。列表的每个元素是字符串。对于字符串在python中又是序列的一种,可以使用字符串的方法来进行一些逻辑处理。
 '''
 
 print(os.stat(r"f:\123.txt"))
