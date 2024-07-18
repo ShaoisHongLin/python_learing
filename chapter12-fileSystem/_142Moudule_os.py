@@ -64,7 +64,7 @@ os最常用的几个操作文件的方法
 os.remove(path)     删除指定文件
 os.rename(src,dest)   重命名文件或目录
 os.stat(path)       返回文件的状况、属性。
-listdir(path)         返回目录下的文件
+os.listdir(path)         返回目录下的文件
 '''
 
 print(os.stat(r"f:\123.txt"))
