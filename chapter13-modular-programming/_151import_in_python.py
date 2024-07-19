@@ -37,7 +37,7 @@ from math import sqrt
 '''
 不要去做的操作
 from xxx import *
-它相比于import xxx会导入更多更多完整多余的内容。
-比如:多余导入的__str__与python自带的__str__或者你在另一个模块写的__str__这种常见的通用方法会在import xx from *时候产生不可预料的错误。
+我们还是建议不要写*,因为大的项目时候导入了多余的包很有可能导致其中一个的模块的方法调用起到了冲突,调用同名的错误来源的方法.造成未知错误而且难以debug出来。
 
+我们最好还是from xxx import 具体的模块
 '''
