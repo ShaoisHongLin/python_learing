@@ -14,6 +14,7 @@ root = tk.Tk()
 
 root.mainloop()
 # 这里是指循环方式触发tk对象的内容.
+# tkinter通过一直循环里面位于各自生命周期内的存在,显示出实时的画面,在介绍label的photo中会发现设置成局部变量将会在mainloop中因为生命周期结束无法显示.
 '''
 
 '''
