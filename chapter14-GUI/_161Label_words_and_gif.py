@@ -6,12 +6,18 @@ def __init__(self, master=None, cnf={}, **kw):
 
 回顾知识:
 1.master我们传入了self
+
 2.cnf={}这个变量是"configure"缩写出来的,后面的花括号意思是我们需要传入"字典"的意思
 3.**kw,本质是**param,只不过改用了keyword的缩写,用来匹配如height、width等关键字.
     在学"方法"的时候:
         我们讲解过参数列表的"可变参数类型",意思是该括号内的参数个数是未知的,如果是多个参数：
         *param将会将它们用元组收集起来
         **param将会将它们用字典收集起来
+
+如:2/3我们选用一种传入
+未知个数的关键字参数:self.label01=Label(self,text="标签名",width=10,height=2,background="blue",foreground="white",anchor="center",font=("黑体",15))
+或者用字典方式:self.label01=Label(self,dict(text="标签名",width=10,height=2,background="blue",foreground="white",anchor="center",
+                            font=("黑体",15)))
 
 STANDARD OPTIONS
 
