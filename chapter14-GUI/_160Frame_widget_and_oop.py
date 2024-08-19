@@ -61,3 +61,37 @@ root.title("这是最简单的GUI中的app对象的示例")
 # 把前面的容器作为参数,放入我们自定义的类里面。
 app=Application(master=root)  # 这里的master是GUI编程里面的独特的从属关系，称之为Master 和Slave,主和奴仆的关系
 root.mainloop()
+
+
+
+
+
+'''
+以下部分呈现一个最为基础的GUI的python的模板,以用于后续的学习中直接复制粘贴.
+from tkinter import *
+from tkinter import messagebox
+
+class Application(Frame):
+    def __init__(self,master=None):
+        super().__init__(master)
+        self.master=master
+        self.pack()
+        self.createWidget()
+        
+        
+    def createWidget(self):
+        pass
+    
+    def f1(self):
+        pass
+            
+
+
+root=Tk()
+root.geometry("960x540+300+200")
+root.title("这是最简单的GUI中的app对象的示例")
+app=Application(master=root) 
+root.mainloop()
+
+
+'''
